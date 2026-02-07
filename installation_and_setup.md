@@ -1,7 +1,6 @@
 # RoboSense‑Fusion setup
 
-This note captures everything completed so far, from having ROS 2 Jazzy installed to preparing the first module of the RoboSense‑Fusion project.
-
+- Below describes the major setup done for making the Project working 
 ---
 
 ## ✔ ROS 2 Environment
