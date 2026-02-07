@@ -20,17 +20,18 @@ mkdir -p ~/robosense_ws/src
 cd ~/robosense_ws
 colcon build
 source /opt/ros/jazzy/setup.bash
+```
 
 ## ✔ Project Creation
 
 The core package for the perception engine:
-```code
+```bash
 cd ~/robosense_ws/src
 ros2 pkg create robosense_fusion \
   --build-type ament_cmake \
   --dependencies rclcpp rclcpp_lifecycle tf2 tf2_ros std_msgs geometry_msgs
-
 ```
+
 - This creates the base structure where all modules will be added.
 ## ✔ Project Direction Defined
 - RoboSense‑Fusion is a Modern C++ ROS 2 perception engine for a factory‑floor robot using:
@@ -41,7 +42,7 @@ ros2 pkg create robosense_fusion \
     - Fusion
 - The architecture is modular and SoC‑ready.
 ## ✔ Module 1 Directory Layout
-```code
+```bash
 robosense_fusion/
   include/
     robosense_fusion/
