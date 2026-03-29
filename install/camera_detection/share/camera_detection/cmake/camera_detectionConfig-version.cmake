@@ -1,0 +1,1 @@
+/home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection/ament_cmake_core/camera_detectionConfig-version.cmake

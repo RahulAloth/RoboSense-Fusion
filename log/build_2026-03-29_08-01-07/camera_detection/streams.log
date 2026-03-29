@@ -1,0 +1,21 @@
+[0.015s] Invoking command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection -- -j8 -l8
+[0.048s] Invoked command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection -- -j8 -l8
+[0.055s] Invoking command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection
+[0.060s] -- Install configuration: ""
+[0.060s] -- Execute custom install script
+[0.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/ament_index/resource_index/package_run_dependencies/camera_detection
+[0.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/ament_index/resource_index/parent_prefix_path/camera_detection
+[0.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/environment/ament_prefix_path.sh
+[0.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/environment/ament_prefix_path.dsv
+[0.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/environment/path.sh
+[0.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/environment/path.dsv
+[0.062s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/local_setup.bash
+[0.062s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/local_setup.sh
+[0.062s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/local_setup.zsh
+[0.062s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/local_setup.dsv
+[0.062s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/package.dsv
+[0.069s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/ament_index/resource_index/packages/camera_detection
+[0.069s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/cmake/camera_detectionConfig.cmake
+[0.070s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/cmake/camera_detectionConfig-version.cmake
+[0.070s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_detection/share/camera_detection/package.xml
+[0.072s] Invoked command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rahul/AiStätt/RoboSense-Fusion/build/camera_detection

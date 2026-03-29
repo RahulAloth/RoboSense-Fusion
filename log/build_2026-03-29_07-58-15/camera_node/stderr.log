@@ -1,0 +1,26 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:1[m[K:
+[01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:[m[K In constructor ‘[01m[KMultiCameraNode::[01;32m[KMultiCameraNode[m[K()[m[K’:
+[01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:48:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Camera %d resolution: %.0fx%.0f"[m[K,
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   49 |                         [32m[Kcap.get(cv::CAP_PROP_FRAME_WIDTH)[m[K,
+      |                         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                [32m[K|[m[K
+      |                                [32m[Kdouble[m[K
+[01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:48:54:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   48 |             RCLCPP_INFO(this->get_logger(), "Camera [01;36m[K%d[m[K resolution: %.0fx%.0f",
+      |                                                     [01;36m[K~^[m[K
+      |                                                      [01;36m[K|[m[K
+      |                                                      [01;36m[Kint[m[K
+      |                                                     [32m[K%f[m[K
+[01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:48:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Camera %d resolution: %.0fx%.0f"[m[K,
+      |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:48:76:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   48 |             RCLCPP_INFO(this->get_logger(), "Camera %d resolution: %.0fx[01;36m[K%.0f[m[K",
+      |                                                                         [01;36m[K~~~^[m[K
+      |                                                                            [01;36m[K|[m[K
+      |                                                                            [01;36m[Kdouble[m[K

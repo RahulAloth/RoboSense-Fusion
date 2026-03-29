@@ -1,0 +1,25 @@
+[0.016s] Invoking command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node -- -j8 -l8
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[5.920s] [100%] [32m[1mLinking CXX executable camera_node[0m
+[6.875s] [100%] Built target camera_node
+[6.883s] Invoked command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node -- -j8 -l8
+[6.884s] Invoking command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node
+[6.889s] -- Install configuration: ""
+[6.889s] -- Execute custom install script
+[6.890s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/lib/camera_node/camera_node
+[6.896s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/ament_index/resource_index/package_run_dependencies/camera_node
+[6.901s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/ament_index/resource_index/parent_prefix_path/camera_node
+[6.907s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/ament_prefix_path.sh
+[6.913s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/ament_prefix_path.dsv
+[6.919s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/path.sh
+[6.926s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/path.dsv
+[6.932s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.bash
+[6.938s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.sh
+[6.944s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.zsh
+[6.950s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.dsv
+[6.956s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/package.dsv
+[6.962s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/ament_index/resource_index/packages/camera_node
+[6.968s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/cmake/camera_nodeConfig.cmake
+[6.975s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/cmake/camera_nodeConfig-version.cmake
+[6.980s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/package.xml
+[6.987s] Invoked command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node

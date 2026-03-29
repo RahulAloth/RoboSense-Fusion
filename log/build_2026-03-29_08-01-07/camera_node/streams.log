@@ -1,0 +1,51 @@
+[0.012s] Invoking command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node -- -j8 -l8
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[2.430s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.430s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.430s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.430s]                  from [01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:1[m[K:
+[2.430s] [01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:[m[K In constructor ‘[01m[KMultiCameraNode::[01;32m[KMultiCameraNode[m[K()[m[K’:
+[2.430s] [01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:46:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.430s]    46 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Camera %d resolution: %.0fx%.0f"[m[K,
+[2.430s]       |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.431s]    47 |                         [32m[Kcap.get(cv::CAP_PROP_FRAME_WIDTH)[m[K,
+[2.431s]       |                         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.431s]       |                                [32m[K|[m[K
+[2.431s]       |                                [32m[Kdouble[m[K
+[2.431s] [01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:46:54:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.431s]    46 |             RCLCPP_INFO(this->get_logger(), "Camera [01;36m[K%d[m[K resolution: %.0fx%.0f",
+[2.431s]       |                                                     [01;36m[K~^[m[K
+[2.431s]       |                                                      [01;36m[K|[m[K
+[2.431s]       |                                                      [01;36m[Kint[m[K
+[2.431s]       |                                                     [32m[K%f[m[K
+[2.431s] [01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:46:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.431s]    46 |             RCLCPP_INFO(this->get_logger(), [01;35m[K"Camera %d resolution: %.0fx%.0f"[m[K,
+[2.431s]       |                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.431s] [01m[K/home/rahul/AiStätt/RoboSense-Fusion/src/camera_node/src/camera_node.cpp:46:76:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.431s]    46 |             RCLCPP_INFO(this->get_logger(), "Camera %d resolution: %.0fx[01;36m[K%.0f[m[K",
+[2.431s]       |                                                                         [01;36m[K~~~^[m[K
+[2.432s]       |                                                                            [01;36m[K|[m[K
+[2.432s]       |                                                                            [01;36m[Kdouble[m[K
+[5.587s] [100%] [32m[1mLinking CXX executable camera_node[0m
+[6.046s] [100%] Built target camera_node
+[6.055s] Invoked command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node -- -j8 -l8
+[6.055s] Invoking command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node
+[6.060s] -- Install configuration: ""
+[6.060s] -- Execute custom install script
+[6.060s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/lib/camera_node/camera_node
+[6.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/ament_index/resource_index/package_run_dependencies/camera_node
+[6.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/ament_index/resource_index/parent_prefix_path/camera_node
+[6.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/ament_prefix_path.sh
+[6.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/ament_prefix_path.dsv
+[6.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/path.sh
+[6.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/environment/path.dsv
+[6.061s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.bash
+[6.062s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.sh
+[6.062s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.zsh
+[6.062s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/local_setup.dsv
+[6.062s] -- Symlinking: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/package.dsv
+[6.068s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/ament_index/resource_index/packages/camera_node
+[6.069s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/cmake/camera_nodeConfig.cmake
+[6.069s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/cmake/camera_nodeConfig-version.cmake
+[6.069s] -- Up-to-date symlink: /home/rahul/AiStätt/RoboSense-Fusion/install/camera_node/share/camera_node/package.xml
+[6.070s] Invoked command in '/home/rahul/AiStätt/RoboSense-Fusion/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rahul/AiStätt/RoboSense-Fusion/build/camera_node

@@ -1,0 +1,1 @@
+/home/rahul/AiStätt/RoboSense-Fusion/build/camera_preprocess/ament_cmake_environment_hooks/local_setup.bash
