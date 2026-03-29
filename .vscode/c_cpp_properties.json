@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "ROS2 Jazzy",
+            "includePath": [
+                "/opt/ros/jazzy/include/**",
+                "/usr/include/**",
+                "/usr/include/opencv4/**",
+                "${workspaceFolder}/install/**",
+                "${workspaceFolder}/src/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++20",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
