@@ -336,3 +336,251 @@ External Client
 |   MotorControllerNode    |
 +--------------------------+
 ```
+
+## 6. Custom ROS2 Message Definitions
+
+The `vehicle_msgs` package contains all custom ROS2 messages, services, and action definitions shared between simulation, vehicle dynamics, control, and monitoring components.
+
+### Package Structure
+
+```text
+vehicle_msgs/
+├── CMakeLists.txt
+├── package.xml
+├── msg/
+│   ├── VehicleState.msg
+│   ├── VehicleCommand.msg
+│   └── VehicleStatus.msg
+├── srv/
+│   └── SetDriveMode.srv
+└── action/
+    └── ExecuteTrajectory.action
+```
+
+### VehicleState.msg
+
+Represents the current vehicle motion state estimated by the dynamics model.
+
+```text
+std_msgs/Header header
+
+float64 x
+float64 y
+float64 yaw
+
+float64 velocity
+float64 steering_angle
+
+float64 acceleration
+float64 yaw_rate
+```
+
+### VehicleCommand.msg
+
+Represents driver or controller commands.
+
+```text
+std_msgs/Header header
+
+float64 target_velocity
+float64 target_acceleration
+float64 steering_angle
+```
+
+### VehicleStatus.msg
+
+Provides health and state information.
+
+```text
+std_msgs/Header header
+
+bool autonomous_enabled
+bool emergency_stop
+
+string current_mode
+float64 battery_level
+```
+
+### SetDriveMode.srv
+
+```text
+string requested_mode
+---
+bool success
+string message
+```
+
+Supported modes:
+
+- MANUAL
+- AUTONOMOUS
+- REMOTE
+- EMERGENCY_STOP
+## 7. Vehicle Dynamics C++ Simulation Node
+
+### Overview
+
+The `vehicle_dynamics` package implements a kinematic bicycle model that simulates vehicle motion based on steering and velocity commands.
+
+The node subscribes to vehicle commands and publishes the resulting vehicle state at a fixed simulation rate.
+
+### Package Structure
+
+```text
+vehicle_dynamics/
+├── CMakeLists.txt
+├── package.xml
+├── include/
+│   └── vehicle_dynamics/
+│       └── vehicle_dynamics_node.hpp
+├── src/
+│   ├── vehicle_dynamics_node.cpp
+│   └── main.cpp
+├── launch/
+│   └── vehicle_dynamics.launch.py
+└── config/
+    └── simulation_params.yaml
+```
+
+### Node Interfaces
+
+#### Subscribed Topics
+
+| Topic | Type |
+|---------|---------|
+| `/vehicle/command` | `vehicle_msgs/msg/VehicleCommand` |
+
+#### Published Topics
+
+| Topic | Type |
+|---------|---------|
+| `/vehicle/state` | `vehicle_msgs/msg/VehicleState` |
+
+---
+
+### Kinematic Bicycle Model
+
+Vehicle state:
+
+```text
+x
+y
+yaw
+velocity
+```
+
+Control inputs:
+
+```text
+acceleration
+steering_angle
+```
+
+State Update Equations
+
+```text
+x_dot = v * cos(yaw)
+
+y_dot = v * sin(yaw)
+
+yaw_dot = (v / L) * tan(delta)
+
+v_dot = acceleration
+```
+
+Where:
+
+```text
+L      = Wheelbase
+v      = Vehicle Velocity
+delta  = Steering Angle
+yaw    = Vehicle Heading
+```
+
+---
+
+### UML Class Diagram
+
+```text
++--------------------------------------------------------+
+| VehicleDynamicsNode : rclcpp::Node                     |
++--------------------------------------------------------+
+| - state_pub_                                            |
+| - command_sub_                                          |
+| - timer_                                                |
+| - wheelbase_                                            |
+| - sim_step_                                             |
+| - state_                                                |
++--------------------------------------------------------+
+| + VehicleDynamicsNode()                                 |
+| - commandCallback()                                     |
+| - updateVehicleModel()                                  |
+| - publishState()                                        |
++--------------------------------------------------------+
+```
+
+---
+
+### Data Flow
+
+```text
+Vehicle Controller
+        |
+        |
+        v
++----------------------+
+| VehicleCommand.msg   |
++----------------------+
+        |
+        v
+
++----------------------+
+| VehicleDynamicsNode  |
++----------------------+
+
+        |
+        v
+
++----------------------+
+| VehicleState.msg     |
++----------------------+
+
+        |
+        v
+
+Visualization / Logging
+Control Algorithms
+Remote Monitoring
+```
+
+---
+
+### Core Simulation Loop
+
+```cpp
+void VehicleDynamicsNode::updateVehicleModel()
+{
+    state_.x += state_.velocity * cos(state_.yaw) * dt_;
+
+    state_.y += state_.velocity * sin(state_.yaw) * dt_;
+
+    state_.yaw +=
+        (state_.velocity / wheelbase_) *
+        tan(current_steering_angle_) *
+        dt_;
+
+    state_.velocity +=
+        current_acceleration_ *
+        dt_;
+}
+```
+
+### Default Parameters
+
+```yaml
+vehicle_dynamics:
+  ros__parameters:
+    wheelbase: 2.8
+    simulation_rate_hz: 100.0
+    publish_rate_hz: 50.0
+```
