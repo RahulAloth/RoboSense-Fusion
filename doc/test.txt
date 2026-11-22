@@ -1,1 +1,11 @@
 test
+Architecture change : 
+Camera Layer
+    ↓
+Vision Processing
+    ↓
+World Model Fusion
+    ↓
+Planning
+    ↓
+Driving + Reality View
